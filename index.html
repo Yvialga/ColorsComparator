@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparateur de couleurs (2 à 4)</title>
+    <title>Comparator of colours (2 to 4)</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Choose your number of colors</legend>
+                <div class="color-number-selector">
+                    <div>
+                        <label for="colors-number1">2 colors</label>
+                        <input type="radio" name="colors-number" id="colors-number1" class="colors-number" checked>
+                    </div>
+                    <div>
+                        <label for="colors-number2">3 colors</label>
+                        <input type="radio" name="colors-number" id="colors-number2" class="colors-number">
+                    </div>
+                    <div>
+                        <label for="colors-number3">4 colors</label>
+                        <input type="radio" name="colors-number" id="colors-number3" class="colors-number">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="type-selector">
+                <fieldset id="colors-inputs">
+                    <legend>Choose your type of code color</legend>
+                    <div>
+                        <label for="code-color1">RGB</label>
+                        <input type="radio" name="code-type" id="code-color1" checked>
+                    </div>
+                    <div>
+                        <label for="code-color2">Hexa</label>
+                        <input type="radio" name="code-type" id="code-color2">
+                    </div>
+                </fieldset>
+                <div id="input-fiels">
+                    <div class="rgb-fields">
+                        <div>
+                            <label for="red-code">R</label>
+                            <input type="number" class="color-code" name="red-code" id="red-code" value="0">
+                        </div>
+                        <div>
+                            <label for="blue-code">G</label>
+                            <input type="number" class="color-code" name="blue-code" id="blue-code" value="0">
+                        </div>
+                        <div>
+                            <label for="green-code">B</label>
+                            <input type="number" class="color-code" name="green-code" id="green-code" value="0">
+                        </div>
+                    </div>
+                    <div class="hexa-fields">
+                        <label for="hexa-code"></label>
+                        <input type="text" name="hexa-code" id="hexa-code">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div id="colors-comparator"></div>
+    </main>
 </body>
 </html>
