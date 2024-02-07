@@ -10,38 +10,40 @@
 <body>
     <header></header>
     <main>
-        <form method="post">
+        <form method="post" class="flex">
             <fieldset>
                 <legend>Choose your number of colors</legend>
-                <div class="color-number-selector">
+                <div class="color-number-selector flex">
                     <div>
-                        <label for="colors-number1">2 colors</label>
                         <input type="radio" name="colors-number" id="colors-number1" class="colors-number" checked>
+                        <label for="colors-number1">2 colors</label>
                     </div>
                     <div>
-                        <label for="colors-number2">3 colors</label>
                         <input type="radio" name="colors-number" id="colors-number2" class="colors-number">
+                        <label for="colors-number2">3 colors</label>
                     </div>
                     <div>
-                        <label for="colors-number3">4 colors</label>
                         <input type="radio" name="colors-number" id="colors-number3" class="colors-number">
+                        <label for="colors-number3">4 colors</label>
                     </div>
                 </div>
             </fieldset>
-            <div class="type-selector">
+            <div class="type-selector flex">
                 <fieldset id="colors-inputs">
                     <legend>Choose your type of code color</legend>
-                    <div>
-                        <label for="code-color1">RGB</label>
-                        <input type="radio" name="code-type" id="code-color1" checked>
-                    </div>
-                    <div>
-                        <label for="code-color2">Hexa</label>
-                        <input type="radio" name="code-type" id="code-color2">
+                    <div class="flex">
+                        <div class="flex">
+                            <label for="code-color1">RGB</label>
+                            <input type="radio" name="code-type" id="code-color1" checked>
+                        </div>
+                        <div class="flex">
+                            <label for="code-color2">Hexa</label>
+                            <input type="radio" name="code-type" id="code-color2">
+                        </div>
                     </div>
                 </fieldset>
                 <div id="input-fiels">
-                    <div class="rgb-fields">
+                    <div class="flex" id="rgb-fields">
                         <div>
                             <label for="red-code">R</label>
                             <input type="number" class="color-code" name="red-code" id="red-code" value="0">
@@ -55,7 +57,7 @@
                             <input type="number" class="color-code" name="green-code" id="green-code" value="0">
                         </div>
                     </div>
-                    <div class="hexa-fields">
+                    <div class="flex" id="hexa-fields">
                         <label for="hexa-code">Hexa code</label>
                         <input type="text" name="hexa-code" id="hexa-code">
                     </div>

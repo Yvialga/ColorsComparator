@@ -1,1 +1,36 @@
 @import "libs/reset.scss";
+@import "libs/var.scss";
+
+////////    Global  \\\\\\\\
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+////////    Form  \\\\\\\\
+
+form, .type-selector, #rgb-fields, #hexa-fields {
+    justify-content: center;
+}
+
+legend {
+    margin: var(--block-spacing);
+}
+
+.type-selector {
+
+    fieldset {
+        margin-bottom: var(--block-spacing);
+    }
+}
+
+#colors-inputs {
+
+    & > div {
+        justify-content: center;
+    }
+
+}
