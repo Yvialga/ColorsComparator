@@ -1,1 +1,136 @@
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}body{width:100%;height:100%}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}:root{--block-spacing: 1.5rem}.flex{display:flex;align-items:flex-start;flex-wrap:wrap}form,.type-selector,#rgb-fields,#hexa-fields{justify-content:center}legend{margin:var(--block-spacing)}.type-selector fieldset{margin-bottom:var(--block-spacing)}#colors-inputs>div{justify-content:center}
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+:root {
+  --block-spacing: 1.5rem;
+  --slightly-spacement: .3rem;
+  --red: rgb(126, 28, 28);
+  --blue: rgb(28, 41, 116);
+  --green: rgb(28, 126, 41);
+}
+
+@media all and (min-width: 768px) {
+  form {
+    flex-flow: row !important;
+  }
+  form fieldset {
+    align-self: flex-start;
+    margin-right: 1rem;
+  }
+}
+.flex {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+* {
+  font-size: 1.1rem;
+}
+
+input {
+  transition: 0.2s;
+}
+
+form, .type-selector, #rgb-fields, #hexa-fields {
+  justify-content: center;
+}
+
+form {
+  flex-flow: column;
+  align-items: center !important;
+}
+form > fieldset .color-number-selector div {
+  margin: auto var(--slightly-spacement);
+}
+
+legend {
+  margin: var(--block-spacing);
+}
+
+.type-selector {
+  flex-flow: column;
+}
+.type-selector fieldset {
+  margin-bottom: var(--block-spacing);
+}
+.type-selector fieldset div input {
+  align-self: center;
+}
+.type-selector fieldset div label {
+  margin: auto var(--slightly-spacement);
+}
+.type-selector #rgb-fields {
+  flex-flow: column;
+}
+.type-selector #rgb-fields div {
+  margin: var(--slightly-spacement) auto;
+}
+.type-selector #rgb-fields div label:first-child {
+  color: var(--red);
+}
+.type-selector #hexa-fields {
+  margin: var(--block-spacing);
+  flex-flow: column;
+  align-items: center;
+}
+.type-selector #hexa-fields label {
+  margin: auto var(--slightly-spacement);
+}
+
+#colors-inputs > div {
+  justify-content: center;
+}
+
+.half-cut {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

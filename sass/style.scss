@@ -1,5 +1,6 @@
 @import "libs/reset.scss";
 @import "libs/var.scss";
+@import "libs/responsive.scss";
 
 ////////    Global  \\\\\\\\
 
@@ -9,11 +10,31 @@
     flex-wrap: wrap;
 }
 
+* {
+    font-size: 1.1rem;
+}
+
+input {
+    transition: .2s;
+}
+
 
 ////////    Form  \\\\\\\\
 
 form, .type-selector, #rgb-fields, #hexa-fields {
     justify-content: center;
+}
+
+form {
+
+    flex-flow: column;
+    align-items: center!important;
+
+    &>fieldset {
+        .color-number-selector div {
+            margin: auto var(--slightly-spacement);
+        }
+    }
 }
 
 legend {
@@ -22,9 +43,47 @@ legend {
 
 .type-selector {
 
+    flex-flow: column;
+
     fieldset {
         margin-bottom: var(--block-spacing);
+        
+        div {
+
+            input {
+                align-self: center;
+            }
+        
+            label {
+                margin: auto var(--slightly-spacement);
+            }
+        }
+
     }
+
+    #rgb-fields {
+        flex-flow: column;
+
+        & div {
+            margin: var(--slightly-spacement) auto;
+
+            label:first-child {
+                color: var(--red);
+            }
+        }
+
+    }
+
+    #hexa-fields {
+        margin: var(--block-spacing);
+        flex-flow: column;
+        align-items: center;
+        
+        label {
+            margin: auto var(--slightly-spacement);
+        }
+    }
+
 }
 
 #colors-inputs {
@@ -33,4 +92,11 @@ legend {
         justify-content: center;
     }
 
+}
+
+
+////////    color blocks  \\\\\\\\
+
+.half-cut {
+    width: 50%;
 }

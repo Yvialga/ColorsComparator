@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparator of colours (2 to 4)</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <header></header>
-    <main>
-        <form method="post" class="flex">
-            <fieldset>
-                <legend>Choose your number of colors</legend>
-                <div class="color-number-selector flex">
-                    <div>
-                        <input type="radio" name="colors-number" id="colors-number1" class="colors-number" checked>
-                        <label for="colors-number1">2 colors</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="colors-number" id="colors-number2" class="colors-number">
-                        <label for="colors-number2">3 colors</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="colors-number" id="colors-number3" class="colors-number">
-                        <label for="colors-number3">4 colors</label>
-                    </div>
-                </div>
-            </fieldset>
-            <div class="type-selector flex">
-                <fieldset id="colors-inputs">
-                    <legend>Choose your type of code color</legend>
-                    <div class="flex">
-                        <div class="flex">
-                            <label for="code-color1">RGB</label>
-                            <input type="radio" name="code-type" id="code-color1" checked>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comparator of colours (2 to 4)</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <form method="post" class="flex">
+                <fieldset>
+                    <legend>Choose your number of colors</legend>
+                    <div class="color-number-selector flex">
+                        <div>
+                            <input type="radio" name="colors-number" id="colors-number1" class="colors-number" checked>
+                            <label for="colors-number1">2 colors</label>
                         </div>
-                        <div class="flex">
-                            <label for="code-color2">Hexa</label>
-                            <input type="radio" name="code-type" id="code-color2">
+                        <div>
+                            <input type="radio" name="colors-number" id="colors-number2" class="colors-number">
+                            <label for="colors-number2">3 colors</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="colors-number" id="colors-number3" class="colors-number">
+                            <label for="colors-number3">4 colors</label>
                         </div>
                     </div>
                 </fieldset>
-                <div id="input-fiels">
-                    <div class="flex" id="rgb-fields">
-                        <div>
-                            <label for="red-code">R</label>
-                            <input type="number" class="color-code" name="red-code" id="red-code" value="0">
+                <div class="type-selector flex">
+                    <fieldset id="colors-inputs">
+                        <legend>Choose your type of code color</legend>
+                        <div class="flex">
+                            <div class="flex">
+                                <label for="code-color1">RGB</label>
+                                <input type="radio" name="code-type" id="code-color1" class="code-color" checked>
+                            </div>
+                            <div class="flex">
+                                <label for="code-color2">Hexa</label>
+                                <input type="radio" name="code-type" id="code-color2" class="code-color">
+                            </div>
                         </div>
-                        <div>
-                            <label for="blue-code">G</label>
-                            <input type="number" class="color-code" name="blue-code" id="blue-code" value="0">
+                    </fieldset>
+                    <div id="input-fiels">
+                        <div class="flex" id="rgb-fields">
+                            <div>
+                                <label for="red-code">R</label>
+                                <input type="number" class="color-code" name="red-code" id="red-code" value="0">
+                            </div>
+                            <div>
+                                <label for="blue-code">G</label>
+                                <input type="number" class="color-code" name="blue-code" id="blue-code" value="0">
+                            </div>
+                            <div>
+                                <label for="green-code">B</label>
+                                <input type="number" class="color-code" name="green-code" id="green-code" value="0">
+                            </div>
                         </div>
-                        <div>
-                            <label for="green-code">B</label>
-                            <input type="number" class="color-code" name="green-code" id="green-code" value="0">
+                        <div class="flex" id="hexa-fields">
+                            <label for="hexa-code">Hexa code</label>
+                            <input type="text" name="hexa-code" id="hexa-code">
                         </div>
-                    </div>
-                    <div class="flex" id="hexa-fields">
-                        <label for="hexa-code">Hexa code</label>
-                        <input type="text" name="hexa-code" id="hexa-code">
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
 
-        <div id="colors-comparator"></div>
-    </main>
-</body>
+            <div id="colors-comparator"></div>
+        </main>
+    </body>
 </html>
